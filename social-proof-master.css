@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./bg-pattern-bottom-mobile.svg");
+    font-family: "League Spartan","sans-serif";
+    font-size: 15px;
+    margin: 4.5rem 0.5rem;
+    text-align: center;
+    
+}  
+.container .head-container h1{
+    color: var(--Very-Dark-Magenta);
+    padding: 1rem;
+    line-height: 0.75;
+    font-weight: 700;
+}
+.container .para-container{
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 1rem;
+    padding: 0.3rem ;
+}
+.stars{
+    background: var(--Light-Grayish-Magenta);
+    margin: 0.8rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+.stars div p{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    padding-top:0.5rem;
+}
+.container .customers .colton, .irene, .anne{
+    background: var(--Very-Dark-Magenta);
+    margin: 1.5rem 1rem;
+    border-radius: 0.5rem;
+}
+.colton, .irene, .anne{
+    padding: 1.5rem;
+
+}
+.customers div img{
+    width:2.5rem;
+    border-radius: 50%;
+}
+.flex-img {
+    display: flex;
+}
+.flex-img div{
+    margin-top: 0.5rem;
+    margin-left: 01rem;
+}
+.flex-img div h3{
+    color: var(--White);
+    font-weight: 700;
+}
+.flex-img div p{
+    color: var(--Soft-Pink);
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+.review{
+    color: var(--White);
+    margin-top: 1rem;
+    text-align:left;
+    line-height: 1.2;
+    font-weight: 500;
+}
+@media (min-width:48rem) {
+    body{
+        background: url("./bg-pattern-top-desktop.svg");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        max-width: 100%;
+    }
+    .container .flex-container .head-container h1{
+        font-weight: 700;
+        font-size: 2.7rem;
+        width: 20rem;
+        text-align: justify;
+    }
+    .container .flex-container .head-container{
+        margin-left: -1rem;
+    }
+    .container .flex-container .head-container .para-container p{
+        width: 22rem;
+        text-align: justify;
+    }
+    .container .flex-container{
+       display: flex;
+       justify-content: space-around;
+       /* display: grid;
+       grid-template-columns: repeat(2,1fr); */
+       width: auto;
+    }
+    .container .flex-container .stars div{
+        display: flex;
+        width: 21.5rem;
+        
+    }
+    .aligne > div:nth-child(1){
+        transform: translateX(-10%);
+    }
+    .aligne > div:nth-child(3){
+        transform: translateX(10%);
+    }
+    .container .flex-container .stars div img{
+        padding-left: 0.5rem;
+    }
+    .container .flex-container .stars div p{
+        margin-left: 1.5rem;
+    }
+    .customers{
+        /* display: grid;
+        grid-template-columns: repeat(3,1fr); */
+        display: flex;
+        margin: auto 5rem;
+        width: 65rem;
+        margin-top: 2rem;
+
+    }
+    .customers >div:nth-child(1){
+        transform: translateY(-10%);
+    }
+    .customers >div:nth-child(3){
+        transform: translateY(10%);
+    }
+    
+    
+        
+    }
+    
+    
+        
+    
+    
+
+
